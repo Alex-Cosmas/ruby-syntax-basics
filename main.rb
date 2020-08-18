@@ -1,9 +1,4 @@
-array = [1,2,3]
-puts array [0]
 
-hash = {h:1, y:2, w:3}
-
-puts hash[:w]
 
 (1.class).methods
 puts Integer.sqrt(81)
@@ -47,7 +42,30 @@ puts 2.object_id
 
 
 
+puts [1,2,3].class 
+puts [1,"Hello",3].class 
 
 
+array = [1,2,3]
+puts array [0]
+
+#hash = {h:1, y:2, w:3}
+#hash = {h:1, y:2, w:3}
+
+hash3 = {h: 1, y: 2, w: 3}
+puts hash3
+puts hash3.class
+
+#puts hash[:w]
 
 
+# Ruby doesnt restrict you from reassigning constant. It will throw a warning 
+H = 1 
+puts H 
+
+H = 2 
+puts H
+
+
+# Everything is an object
+# Top level Object: Basic Object
